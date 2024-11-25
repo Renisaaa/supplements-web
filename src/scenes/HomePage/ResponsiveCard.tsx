@@ -5,6 +5,7 @@ import ButtonLink from "@/shared/ButtonLink";
 import { useProductCart } from "../cart/ProductCartContext";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { StarIcons } from "@/shared/StarIcons";
 
 export default function ResponsiveCard({
   id,
@@ -73,39 +74,38 @@ export default function ResponsiveCard({
   } else if (isBelowsxScreens) {
     cardStyle = { width: "8rem", height: "25rem", margin: "0.5rem" };
   } else if (isBelowSmallScreens) {
-    cardStyle = { width: "11rem", height: "26rem", margin: "0.5rem" };
+    cardStyle = { width: "11rem", height: "25rem", margin: "0.5rem" };
   } else if (isMediumScreens) {
-    cardStyle = { width: "16rem", height: "30rem", margin: "0.5rem" };
+    cardStyle = { width: "16rem", height: "25rem", margin: "0.5rem" };
   } else if (isAboveMediumScreens) {
-    cardStyle = { width: "17rem", height: "40rem", margin: "0.5rem" };
+    cardStyle = { width: "17rem", height: "25rem", margin: "0.5rem" };
   }
   if (isAboveLargeScreens) {
-    cardStyle = { width: "20rem", height: "44rem", margin: "0.5rem" };
+    cardStyle = { width: "20rem", height: "28rem", margin: "0.5rem" };
   }
 
   const [isFavorite, setFavorite] = useState(false);
+  const [showBuyBtn, setShowBuyBtn] = useState(false);
 
   return (
-    <div>
+    <div
+      onMouseEnter={() => setShowBuyBtn(true)}
+      onMouseLeave={() => setShowBuyBtn(false)}
+    >
       <Link
         key={id}
         onClick={handleRegularClick}
         to="/productpage"
         className="no-underline"
       >
-        <Card style={cardStyle} className="border-1 border-black">
+        <Card style={cardStyle} className="border-0">
           <span className="relative">
-            {inStock ? (
-              <div className=" absolute top-2 left-2 max-w-fit border-solid border-black bg-green-500 rounded-lg mt-auto p-2">
-                <div className="text-xs tracking-tight text-primary-100 ">
-                  ✔️ in stock
-                </div>
-              </div>
-            ) : (
-              <div className="absolute top-2 left-2 border-solid border-black bg-danger rounded-lg my-auto p-2">
-                <div className="text-xs tracking-tight text-primary-100 ">
-                  ⤫ not avalaible
-                </div>
+            {showBuyBtn && (
+              <div
+                className="absolute bottom-0 right-5 w-10 h-10 bg-black text-white flex justify-center items-center text-2xl"
+                onClick={handleBuyNowClick}
+              >
+                +
               </div>
             )}
 
@@ -115,41 +115,17 @@ export default function ResponsiveCard({
           <Card.Body className="flex flex-col justify-between">
             <div className="mt-2">
               <Card.Title>
-                <h3 className="text-center font-bold text-base">{name}</h3>
+                <h3 className="text-center text-sm font-bold">{name}</h3>
               </Card.Title>
             </div>
 
-            {isAboveMediumScreens && (
-              <div>
-                <Card.Text className="text-center">{details}</Card.Text>
-              </div>
-            )}
-            <div className="mt-auto mb-2 flex justify-center items-center flex-col">
-              {" "}
-              {/* Add mt-auto to push it to the bottom */}
-              <span className="flex  justify-center xxs:flex-col gap-2  xxs:text-xs">
-                <h3 className=" flex font-bold xxs:text-md mb-0">{price}$</h3>
-                <p className=" flex font-normal text-red-700 line-through">
-                  {oldprice}$
-                </p>
+            <div className="mt-auto flex justify-center items-center flex-col">
+              <span className="flex  justify-center xxs:flex-col gap-1  xxs:text-xs">
+                <h3 className=" flex font-bold text-sm xxs:text-md mb-0 text-gray-500">
+                  Rs. {price}
+                </h3>
               </span>
-              {inStock ? (
-                <ButtonLink
-                  onClick={handleBuyNowClick}
-                  to={"/productpage"}
-                  children={"BUY NOW"}
-                  disabled={false}
-                  className=" bg-black   text-primary-100 no-underline  px-6 py-2.5 rounded-lg font-semibold text-xl w-full box-border;
-                  "
-                />
-              ) : (
-                <ButtonLink
-                  to={"/productpage"}
-                  children={"SOLD OUT"}
-                  disabled={true}
-                  className=" bg-neutral-400   text-primary-100 no-underline px-6 py-2.5 rounded-lg font-semibold text-xl "
-                />
-              )}
+              <StarIcons />
             </div>
           </Card.Body>
         </Card>
