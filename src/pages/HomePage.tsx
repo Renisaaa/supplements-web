@@ -16,17 +16,16 @@ import DiscountBanner from "@/scenes/HomePage/DiscountBanner";
 export default function HomePage() {
   return (
     <div className="">
-      <HomeCarousel />
-      <Incentives />
+      <HomeCarousel />   
       <BrandCarousel />
       <Shop />
       <InfoSales />
       <Trending />
+      <Incentives />
       <Reviews />
-      <DiscountBanner/>
-      <Transformations />
+      <DiscountBanner/>  
       <Faq/>
-      <Newsletter />
+      <Transformations />  
     </div>
   );
 }
