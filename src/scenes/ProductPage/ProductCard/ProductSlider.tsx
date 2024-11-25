@@ -29,7 +29,7 @@ const ProductSlider: React.FC<ProductSliderType> = ({ images }) => {
                 <div className="relative">
                   <img
                     src={slideImage.src}
-                    className="rounded-lg"
+                    className="  "
                     alt={`Slide ${index}`}
                   />
                   <div className="w-10 absolute top-3 right-3">

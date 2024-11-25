@@ -8,7 +8,7 @@ export default function Accordion({ title, answer }: AccordionType) {
     <div>
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
-        className="flex justify-between w-full  bg-black border-1  border-secondary-500 p-3 rounded-lg"
+        className="flex justify-between w-full  bg-black border-1  border-secondary-500 p-3   "
       >
         <span className="text-primary-100">{title}</span>
 
@@ -39,7 +39,7 @@ export default function Accordion({ title, answer }: AccordionType) {
         </svg>
       </button>
       <div
-        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm  ${
+        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm  bg-slate-50 mb-2 ${
           accordionOpen
             ? "grid-rows-[1fr] opacity-100"
             : "grid-rows-[0fr] opacity-0"

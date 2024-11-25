@@ -26,7 +26,7 @@
 //             </div>
 //             {/* BUTTON */}
 //             <div className=" relative my-8 max-sm:mx-auto flex  justify-center items-center">
-//               <button className="  rounded-lg  bg-black  px-20 py-3   text-primary-100 no-underline font-semibold text-xl">
+//               <button className="      bg-black  px-20 py-3   text-primary-100 no-underline font-semibold text-xl">
 //                 BUY NOW
 //               </button>
 //             </div>
@@ -89,7 +89,7 @@ export default function InfoSales() {
 
             {/* BUTTON */}
             <div className="relative w-full my-8 max-sm:mx-auto flex sm:justify-start  xs:justify-center  xxs:justify-center items-center">
-              <button className="rounded-lg  bg-black px-20 py-3 text-primary-100 no-underline font-semibold text-xl">
+              <button className="    bg-black px-20 py-3 text-primary-100 no-underline font-semibold text-xl">
                 BUY NOW
               </button>
             </div>

@@ -187,7 +187,7 @@ export default function ProductReviews() {
 
               <a
                 href="#"
-                className="mt-6 inline-flex w-full items-center justify-center rounded-md border border-gray-300 bg-white px-8 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 sm:w-auto lg:w-full"
+                className="mt-6 inline-flex w-full items-center justify-center   border border-gray-300 bg-white px-8 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 sm:w-auto lg:w-full"
               >
                 Write a review
               </a>

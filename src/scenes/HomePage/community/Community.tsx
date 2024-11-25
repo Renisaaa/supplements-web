@@ -60,7 +60,7 @@ export default function Community() {
               Unlock Exclusive Content and Connect with a Community Committed to
               Health and Wellness
             </h3>
-            <button className="rounded-lg bg-black-900 px-20 py-3 mb-10 text-primary-100 no-underline font-semibold text-xl">
+            <button className="   bg-black-900 px-20 py-3 mb-10 text-primary-100 no-underline font-semibold text-xl">
               BECOME AN AMBASSADOR
             </button>
           </div>

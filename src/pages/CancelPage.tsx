@@ -16,7 +16,7 @@ export default function CancelPage() {
           <div className="mt-10 flex items-center justify-center  flex-col gap-6">
             <Link
               to="/"
-              className="rounded-lg  bg-black px-20 py-3 text-primary-100 no-underline font-semibold text-xl  shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
+              className="  bg-black px-20 py-3 text-primary-100 no-underline font-semibold text-xl  shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
             >
               Go back home
             </Link>

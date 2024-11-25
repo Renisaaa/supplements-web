@@ -42,7 +42,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartType, id: number) {
       show={isOpen}
       onHide={closeCart}
       placement="end"
-      className="rounded-lg"
+      className="  "
     >
       <Offcanvas.Header closeButton>
         <Offcanvas.Title>Your Cart</Offcanvas.Title>
@@ -59,7 +59,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartType, id: number) {
             <ButtonLink
               to="/"
               children="Continue Shopping"
-              className="bg-black  text-primary-100 no-underline px-6 py-2.5 rounded-lg font-semibold text-xl "
+              className="bg-black  text-primary-100 no-underline px-6 py-2.5    font-semibold text-xl "
               disabled={false}
             />
           </div>
@@ -82,7 +82,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartType, id: number) {
               <ItemCart key={item.id} {...item} />
             ))}
 
-            <div className="flex max-w-fit max-h-fit border-solid border-green-500 bg-green-500 rounded-lg p-2 mx-auto">
+            <div className="flex max-w-fit max-h-fit border-solid border-green-500 bg-green-500    p-2 mx-auto">
               <div className="text-xs tracking-tight text-primary-100 text-center ">
                 You save in total {formatCurrency(savedAmount())}!!!🎉🥳
               </div>
@@ -96,7 +96,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartType, id: number) {
           
           <button
             onClick={checkout}
-            className="mt-auto flex  w-full items-end justify-center rounded-md border border-transparent  font-bold px-8 py-3 text-3xl text-primary-100 bg-green-500 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2"
+            className="mt-auto flex  w-full items-end justify-center   border border-transparent  font-bold px-8 py-3 text-3xl text-primary-100 bg-green-500 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2"
           >
             Checkout
           </button>

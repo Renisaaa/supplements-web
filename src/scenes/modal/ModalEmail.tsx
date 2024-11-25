@@ -37,7 +37,7 @@ export default function ModalEmail() {
                 deals.
               </p>
               <input
-                className="my-1 w-full rounded-lg bg-primary-100 border-slate-950 border-1
+                className="my-1 w-full    bg-primary-100 border-slate-950 border-1
             px-3 py-3 placeholder-black  "
                 type="text"
                 placeholder="Email Address:"
@@ -47,7 +47,7 @@ export default function ModalEmail() {
           </button> */}
               <button
                 onClick={handleClose}
-                className=" flex w-full items-center mt-2 mb-4  justify-center rounded-md border border-transparent  px-7 py-3 text-2xl font-bold  text-primary-100  bg-black hover:bg-primary-300 focus:outline-none focus:ring-2 focus:ring-offset-2"
+                className=" flex w-full items-center mt-2 mb-4  justify-center   border border-transparent  px-7 py-3 text-2xl font-bold  text-primary-100  bg-black hover:bg-primary-300 focus:outline-none focus:ring-2 focus:ring-offset-2"
               >
                 Continue
               </button>

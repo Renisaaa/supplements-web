@@ -70,8 +70,8 @@ export default function HomeCarousel() {
         ))}
       </Slide>
 
-      <div className="max-w-2xl grid gap-2 absolute bottom-10 left-10 text-primary-100">
-        <div className="font-group-2 text-theme-overlay-text ">
+      <div className="max-w-2xl grid gap-2 absolute bottom-10 left-1/2 -translate-x-1/2 text-primary-100">
+        {/* <div className="font-group-2 text-theme-overlay-text ">
           <p className="_p">
             <span className="relative inline-flex items-center h-[1em] align-middle  justify-center">
               <svg
@@ -132,9 +132,9 @@ export default function HomeCarousel() {
             </span>
             TRUSTED BY 170,000+ ATHLETES WORLDWIDE
           </p>
-        </div>
+        </div> */}
 
-        <div className="font-group-2 text-theme-overlay-text">
+        {/* <div className="font-group-2 text-theme-overlay-text">
           <h1 className="">
             Elite Supplements, <div>Backed by Science.</div>
           </h1>
@@ -144,10 +144,10 @@ export default function HomeCarousel() {
             To help you get stronger, live healthier, and become a better you.{" "}
             <div>Take the fitness quiz below to start your transformation.</div>
           </p>
-        </div>
+        </div> */}
 
-        <div className="mt-4 -mx-2 flex flex-col sm:flex-row sm:justify-start text-left ">
-          <button className="rounded-lg  bg-black px-20 py-3 text-primary-100 no-underline font-semibold text-xl">
+        <div className="mt-4 -mx-2 flex flex-col sm:flex-row sm:justify-center text-center ">
+          <button className="  bg-transparent px-20 py-3 text-primary-100 no-underline font-semibold text-xl border border-primary-100">
             BUY NOW
           </button>
         </div>

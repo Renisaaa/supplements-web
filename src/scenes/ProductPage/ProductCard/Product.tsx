@@ -87,19 +87,19 @@ export default function Product({
                 </div>
               </div>
               <span className="flex flex-row gap-2">
-                <div className=" max-w-fit border-solid border-green-500 bg-green-500 rounded-lg my-auto p-2 ">
+                <div className=" max-w-fit border-solid border-green-500 bg-green-500    my-auto p-2 ">
                   <div className="text-xs tracking-tight text-primary-100 ">
                     You save {formatCurrency(oldprice - price)}!
                   </div>
                 </div>
                 {inStock ? (
-                  <div className="max-w-fit border-solid border-black bg-green-500 rounded-lg my-auto p-2">
+                  <div className="max-w-fit border-solid border-black bg-green-500    my-auto p-2">
                     <div className="text-xs tracking-tight text-primary-100 ">
                       ✔️ in stock
                     </div>
                   </div>
                 ) : (
-                  <div className="max-w-fit border-solid border-black bg-danger rounded-lg my-auto p-2">
+                  <div className="max-w-fit border-solid border-black bg-danger    my-auto p-2">
                     <div className="text-xs tracking-tight text-primary-100 ">
                       ❌ not avalaible
                     </div>
@@ -129,7 +129,7 @@ export default function Product({
                   <button
                     type="button"
                     disabled={!inStock}
-                    className=" flex w-full items-center justify-center rounded-md border border-transparent  px-8 py-3 text-2xl font-bold  text-primary-100  bg-black disabled:bg-neutral-400 hover:bg-primary-300 focus:outline-none focus:ring-2 focus:ring-offset-2"
+                    className=" flex w-full items-center justify-center   border border-transparent  px-8 py-3 text-2xl font-bold  text-primary-100  bg-black disabled:bg-neutral-400 hover:bg-primary-300 focus:outline-none focus:ring-2 focus:ring-offset-2"
                     onClick={() => {
                       increaseCartQuantity(id);
                       openCart();
@@ -152,7 +152,7 @@ export default function Product({
                           increaseCartQuantity(id);
                           openCart();
                         }}
-                        className="flex grow w-full  justify-center  rounded-md border border-transparent  px-8 py-3 text-2xl font-bold  text-primary-100  bg-black hover:bg-primary-300 focus:outline-none focus:ring-2 focus:ring-offset-2"
+                        className="flex grow w-full  justify-center    border border-transparent  px-8 py-3 text-2xl font-bold  text-primary-100  bg-black hover:bg-primary-300 focus:outline-none focus:ring-2 focus:ring-offset-2"
                       >
                         +
                       </button>
@@ -162,7 +162,7 @@ export default function Product({
                           decreaseCartQuantity(id);
                           openCart();
                         }}
-                        className=" flex grow w-full justify-center rounded-md border border-transparent  px-8 py-3 text-2xl font-bold  text-primary-100  bg-black hover:bg-primary-300 focus:outline-none focus:ring-2 focus:ring-offset-2"
+                        className=" flex grow w-full justify-center   border border-transparent  px-8 py-3 text-2xl font-bold  text-primary-100  bg-black hover:bg-primary-300 focus:outline-none focus:ring-2 focus:ring-offset-2"
                       >
                         -
                       </button>

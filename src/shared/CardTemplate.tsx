@@ -20,7 +20,7 @@ const CardTemplate = ({
             <StarIcons />
             <span className="flex flex-row gap-1 ">
               <div className="flex items-center ">{name}</div>
-              <div className="flex items-start my-auto p-2 max-w-fit max-h-fit border-solid border-green-500 bg-green-500 rounded-lg text-xs tracking-tight text-primary-100 text-center">
+              <div className="flex items-start my-auto p-2 max-w-fit max-h-fit border-solid border-green-500 bg-green-500    text-xs tracking-tight text-primary-100 text-center">
                 ✅ verified Buyer
               </div>
             </span>
@@ -32,7 +32,7 @@ const CardTemplate = ({
         <section className=" flex w-full h-full px-2 flex-wrap">
           <div className="  flex flex-col  transition  whitespace-normal p-4 bg-white   ">
             <div>
-              <img src={img} alt="Before and after" className="rounded-lg" />
+              <img src={img} alt="Before and after" className="  " />
             </div>
 
             <p className="mt-5 text-normal">{description}</p>

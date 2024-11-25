@@ -61,8 +61,8 @@ function Trending() {
               to="/productpage"
               className="no-underline"
             >
-              <div key={product.id} className="group relative border-1 border-black-900 rounded-lg">
-                <div className="h-56 w-full overflow-hidden rounded-md group-hover:opacity-75 lg:h-72 xl:h-80 ">
+              <div key={product.id} className="group relative border-1 border-black-900   ">
+                <div className="h-56 w-full overflow-hidden   group-hover:opacity-75 lg:h-72 xl:h-80 ">
                   <img
                     src={product.imageSrc}
                     alt={product.imageAlt}
@@ -91,13 +91,13 @@ function Trending() {
                 </div>
 
                 {/* {inStock ? ( */}
-                <div className=" absolute top-3 left-3 max-w-fit border-solid border-black bg-green-500 rounded-lg mt-auto p-2">
+                <div className=" absolute top-3 left-3 max-w-fit border-solid border-black bg-green-500    mt-auto p-2">
                   <div className="text-xs tracking-tight text-primary-100 ">
                     ✔️ in stock
                   </div>
                 </div>
                 {/* ) : (
-              <div className="absolute top-2 left-2 border-solid border-black bg-danger rounded-lg my-auto p-2">
+              <div className="absolute top-2 left-2 border-solid border-black bg-danger    my-auto p-2">
                 <div className="text-xs tracking-tight text-primary-100 ">
                   ⤫ not avalaible
                 </div>
@@ -152,7 +152,7 @@ function Trending() {
                     to={"/productpage"}
                     children={"BUY NOW"}
                     disabled={false}
-                    className=" bg-black   text-primary-100 no-underline  px-6 py-2.5 rounded-lg font-semibold text-xl w-full box-border;
+                    className=" bg-black   text-primary-100 no-underline  px-6 py-2.5    font-semibold text-xl w-full box-border;
                   "
                   />
                 </span>

@@ -47,7 +47,7 @@ const ProductFaq = () => {
               <div key={faq.question} className="mb-4">
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="flex justify-between w-full p-3 rounded-lg"
+                  className="flex justify-between w-full p-3   "
                 >
                   <span className="text-black">{faq.question}</span>
 

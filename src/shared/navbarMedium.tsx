@@ -19,23 +19,23 @@ function navbarMedium() {
 
   return (
     <div className={`${flexBetween} w-full`}>
-      <div className={`${flexBetween} gap-10 text-sm`}>
+      <div className={`${flexBetween} gap-20 text-sm`}>
       <NavLink
         className=" text-4xl   font-bold  no-underline text-black focus:text-primary-500 "
         to="/"
       >
-           <Logo/>
+           {/* <Logo/> */}
       </NavLink>
   
       </div>
 
       {/* MIDDLE  */}
-
       <div className={`${flexBetween}  text-sm`}>
         <NavLink
-          className="text-xl no-underline font-bold text-black focus:text-primary-500"
+          className="text-xl no-underline font-bold text-black focus:text-primary-500 items-center flex-row justify-center "
           to="/"
         >
+           <Logo/>
           PRODUCTS
         </NavLink>
       </div>
@@ -51,8 +51,8 @@ function navbarMedium() {
                       {/* FAVORITE */}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="2rem"
-                        height="2rem"
+                        width="1.5rem"
+                        height="1.5rem"
                         fill="bg-black"
                         className="bi bi-heart"
                         viewBox="0 0 16 16"
@@ -64,8 +64,8 @@ function navbarMedium() {
         <button
           onClick={openCart}
           style={{
-            width: "2rem",
-            height: "2rem",
+            width: "1.5rem",
+            height: "1.5rem",
             position: "relative",
           }}
           className="rounded-circle"
@@ -82,8 +82,8 @@ function navbarMedium() {
             className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
             style={{
               color: "white",
-              width: "1.5rem",
-              height: "1.5rem",
+              width: "1rem",
+              height: "1rem",
               position: "absolute",
               bottom: 0,
               right: 0,
